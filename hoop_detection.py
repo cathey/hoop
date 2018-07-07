@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Rapsodo Project - Basketball hoop detection
+Basketball hoop detection
 
 Created on Wed Jul  4 21:02:34 2018
 
