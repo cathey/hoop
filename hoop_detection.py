@@ -282,7 +282,7 @@ def cnn_model():
     def custom_loss(y_true, y_pred):
 #        x, y, w, h = y_true
 #        xp, yp, wp, hp = y_pred
-        loss = K.sum(K.square(y_true[...,0]-y_pred[...,0]) + K.square(y_true[...,1]-y_pred[...,1])
+        loss = K.mean(K.square(y_true[...,0]-y_pred[...,0]) + K.square(y_true[...,1]-y_pred[...,1])
             + K.square(K.sqrt(y_true[...,2])-K.sqrt(y_pred[...,2]))
             + K.square(K.sqrt(y_true[...,3])-K.sqrt(y_pred[...,3])))
         return loss
